@@ -31,7 +31,7 @@ public class GenericWrappers {
 	public GenericWrappers() {
 		Properties prop = new Properties();
 		try {
-			prop.load(new FileInputStream(new File("./common/config.properties")));
+			prop.load(new FileInputStream(new File("./common.properties/config.properties")));
 			sHubUrl = prop.getProperty("HUB");
 			sHubPort = prop.getProperty("PORT");
 			sUrl = prop.getProperty("URL");
@@ -432,7 +432,7 @@ public class GenericWrappers {
 	
 	public void loadObjects() throws FileNotFoundException, IOException{
 		prop = new Properties();
-		prop.load(new FileInputStream(new File("./common/object.properties")));
+		prop.load(new FileInputStream(new File("./common.properties/object.properties")));
 	
 	}
 	
